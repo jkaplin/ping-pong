@@ -94,7 +94,7 @@
 				for($i = 0; $i < count($participants); $i++) { ?>
 				<div>
 					<br>
-					<?php// echo $participants[$i]; ?>
+					<?php echo $participants[$i]; ?>
 					<?php
 						if ($participants[$i] == $intra)
 							$participant = 1;
@@ -106,7 +106,7 @@
 	</div>
 
 	<form action="http://ft-ping-pong.herokuapp.com/tournament/add.php" method="post">
-		<button id="enter" name="enter" value="<?php /* echo $intra; */ ?>">Enter The Tournament</button>
+		<button id="enter" name="enter" value="<?php echo $intra; ?>">Enter The Tournament</button>
 	</form>
 
 <!-- <iframe src="https://challonge.com/ivezutit/module?multiplier=2" width="100%" height="60%" frameborder="0" scrolling="auto" allowtransparency="true"></iframe> -->
